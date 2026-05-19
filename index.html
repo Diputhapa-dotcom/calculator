@@ -7,37 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator">
-
-      <div class="result">
-        <input type="text" class="output">
-      </div>
-
-
-
-
-
-      <div class="input">
-
-        <div class="left">
-          <button class="number" onclick="num(1)">1</button>
-          <button class="number" onclick="num(2)">2</button>
-          <button class="number" onclick="num(3)">3</button>
-          <button class="number" onclick="num(4)">4</button>
-        </div>
+<table border="n">
+  <tr>
+    <td colspan=4>
+      <input type="text" id="display" disabled>
+    </td>
+  </tr>
+ 
 
 
-
-
-        <div class="right">
-            <button class="button" onclick="add()">+</button>
-            <button class="button" onclick="equal()" id="equal">=</button>
-        </div>
-      </div>
-    </div>
-
-
-    <div id="parent"></div>
+  <tr>
+    <td><button onclick="addvalue('9')">9</button></td>
+    <td><button onclick="reset()">c</button></td>
+    <td><button onclick="addvalue('*')">*</button></td>
+    <td><button onclick="addvalue('/')">/</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="addvalue('8')">8</button></td>
+    <td><button onclick="addvalue('7')">7</button></td>
+    <td><button onclick="addvalue('6')">6</button></td>
+    <td><button onclick="addvalue('-')">-</button></td>
+  <tr>
+  <tr>
+    <td><button onclick="addvalue('5')">5</button></td>
+    <td><button onclick="addvalue('4')">4</button></td>
+    <td><button onclick="addvalue('3')">3</button></td>
+    <td><button onclick="addvalue('+')">+</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="addvalue('2')">2</button></td>
+    <td><button onclick="addvalue('1')">1</button></td>
+    <td><button onclick="addvalue('0')">0</button></td>
+    <td><button onclick="calculate()">=</button></td>
+  </tr>
+</table>
 <script src="script.js"></script>
 </body>
 </html>
